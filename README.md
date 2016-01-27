@@ -1,5 +1,7 @@
-# selenium-workshop
+# Web自动化测试  
+Web自动化即是用编程语言编写测试脚本，通过selenium驱动Web浏览器来模拟用户行为，到达测试的目的。所以要编写自动化测试用例需要编程环境（语言+IDE），selenium， selenium相应要语言的API封装库和浏览器驱动。这里对应的就是python+pycharm，seleium的python绑定（自带了selenium），以及chrome浏览器的driver。编写脚本的方式也有很多，直接用脚本，使用xunit框架或者bdd框架
 
+### 软件安装
 1. 安装python 3.5.1  
    下载链接在这里找到：https://www.python.org/downloads/  
    __注意事项：安装时记得pip要一起安装，安装后需要配置环境变量，把安装目录和安装目录下的Scripts目录加到PATH__
@@ -14,7 +16,7 @@
    下载链接在这里找到：http://chromedriver.storage.googleapis.com/index.html  
    __注意事项：解压到目录后，把目录加入到PATH环境变量__
 
-# 一个selenium例子
+### 一个selenium例子
 ```python
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -29,7 +31,7 @@ assert "No results found." not in driver.page_source
 driver.close()
 ```
 
-# 一个测试例子
+### 一个测试例子
 ```python
 import unittest
 
@@ -51,15 +53,15 @@ class TestStringMethods(unittest.TestCase):
 ```
 
 
-# API文档
+### API文档
 1. unittest：https://docs.python.org/3/library/unittest.html#module-unittest
 2. selenium python binding: http://selenium-python.readthedocs.org/
 
-# 教程
+### 教程
 1. python3教程（中文）：http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000
 2. selenium基础介绍（中文）：http://www.cnblogs.com/fnng/p/3980093.html
 
-# 参考资料
+### 参考资料
 1. selenium系列文章（中文）：http://www.cnblogs.com/fnng/category/349036.html
 2. selenium系列文章（英文）：http://elementalselenium.com/
 
