@@ -15,7 +15,11 @@
    __注意事项：解压到目录后，把目录加入到PATH环境变量__
 
 # 教程
-1. python3教程：http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000
-2. selenium基础介绍：http://www.cnblogs.com/fnng/p/3980093.html
+1. python3教程（中文）：http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000
+2. selenium基础介绍（中文）：http://www.cnblogs.com/fnng/p/3980093.html
+
+# 参考资料
+1. selenium系列文章（中文）：http://www.cnblogs.com/fnng/category/349036.html
+2. selenium系列文章（英文）：http://elementalselenium.com/
 
    
