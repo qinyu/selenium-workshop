@@ -14,6 +14,47 @@
    下载链接在这里找到：http://chromedriver.storage.googleapis.com/index.html  
    __注意事项：解压到目录后，把目录加入到PATH环境变量__
 
+# 一个selenium例子
+```python
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+
+driver = webdriver.Firefox()
+driver.get("http://www.python.org")
+assert "Python" in driver.title
+elem = driver.find_element_by_name("q")
+elem.send_keys("pycon")
+elem.send_keys(Keys.RETURN)
+assert "No results found." not in driver.page_source
+driver.close()
+```
+
+# 一个测试例子
+```python
+import unittest
+
+class TestStringMethods(unittest.TestCase):
+
+  def test_upper(self):
+      self.assertEqual('foo'.upper(), 'FOO')
+
+  def test_isupper(self):
+      self.assertTrue('FOO'.isupper())
+      self.assertFalse('Foo'.isupper())
+
+  def test_split(self):
+      s = 'hello world'
+      self.assertEqual(s.split(), ['hello', 'world'])
+      # check that s.split fails when the separator is not a string
+      with self.assertRaises(TypeError):
+          s.split(2)
+```
+
+
+# API文档
+1. unittest：https://docs.python.org/3/library/unittest.html#module-unittest
+2. selenium python binding: http://selenium-python.readthedocs.org/
+
 # 教程
 1. python3教程（中文）：http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000
 2. selenium基础介绍（中文）：http://www.cnblogs.com/fnng/p/3980093.html
