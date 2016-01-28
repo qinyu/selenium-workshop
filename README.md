@@ -66,7 +66,9 @@ class TestStringMethods(unittest.TestCase):
 2. selenium系列文章（英文）：http://elementalselenium.com/
 
 # 移动APP自动化测试
-移动APP自动化测试和Web自动化测试类似，一样是模拟用户的行为，只是驱动的是移动设备而不是浏览器。selenium只能驱动浏览器，驱动移动设备得依靠其他工具。目前最受欢迎的就是appium，appium和selenium的名字很像，它使用的是selenium的wd协议，和selenium的API几乎一模一样，更是提供了移动设备才有的一些操作，如打开关闭应用，滑动手势等。除了appium，驱动设备还需要各个平台的开发工具，对iOS设备来说就是Xcode，对android设备来说就是android sdk。
+移动APP自动化测试和Web自动化测试类似，一样是模拟用户的行为，只是驱动的是移动设备而不是浏览器。selenium只能驱动浏览器，驱动移动设备得依靠其他工具。目前最受欢迎的就是appium，appium和selenium的名字很像，它使用的是selenium的wd协议，和selenium的API几乎一模一样，更是提供了移动设备才有的一些操作，如打开关闭应用，滑动手势等。除了appium，驱动设备还需要各个平台的开发工具，对iOS设备来说就是Xcode，对android设备来说就是android sdk。  
+![Appium iOS](http://www.3pillarglobal.com/sites/default/files/appium1.png)  
+![Appium Android](http://www.3pillarglobal.com/sites/default/files/appium2.png)
 
 ### 软件安装
 1. 安装appium  
@@ -81,3 +83,4 @@ class TestStringMethods(unittest.TestCase):
    `pip install Appium-Python-Client`
 5. 安装genymotion模拟器（Android）  
    在这里注册下载：http://www.genymotion.net/
+
