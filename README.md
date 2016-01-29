@@ -68,16 +68,31 @@ class TestStringMethods(unittest.TestCase):
 # 移动APP自动化测试
 移动APP自动化测试和Web自动化测试类似，一样是模拟用户的行为，只是驱动的是移动设备而不是浏览器。selenium只能驱动浏览器，驱动移动设备得依靠其他工具。目前最受欢迎的就是appium，appium和selenium的名字很像，它使用的是selenium的wd协议，和selenium的API几乎一模一样，更是提供了移动设备才有的一些操作，如打开关闭应用，滑动手势等。除了appium，驱动设备还需要各个平台的开发工具，对iOS设备来说就是Xcode，对android设备来说就是android sdk。
 
+### 原理图
+![Appium iOS](http://www.3pillarglobal.com/sites/default/files/appium1.png)  
+![Appium Android](http://www.3pillarglobal.com/sites/default/files/appium2.png)
+
+### 单元测试
+##### 测试步骤
+![Four phase test](http://xunitpatterns.com/Four%20Phase%20Test.gif)
+##### 测试方法
+![Test Methods](http://xunitpatterns.com/Test%20Method.gif)
+##### 测试用例
+![Testcase Class](http://xunitpatterns.com/Testcase%20Class.gif)
+##### 测试发现
+![Test Discovery](http://xunitpatterns.com/Test%20Discovery.gif)
+
 ### 软件安装
-1. 安装appium
+1. 安装appium  
    有两种方式，一种是安装appium独立应用，一种是通过node安装（appium是用node实现）。这里我们选择第一种方式。  
    下载链接在这里找到：https://bitbucket.org/appium/appium.app/downloads/
-2. 安装android sdk
-   由于众所周知的原因，google的网站访问不稳定，好在国内有好心人做了镜像，提供了几乎所有android开发工具的下载。我们需要安装的是SDK Tools和Platform Tools
-   下载链接在这里找到：http://www.androiddevtools.cn/
+2. 安装android sdk  
+   由于众所周知的原因，google的网站访问不稳定，好在国内有好心人做了镜像，提供了几乎所有android开发工具的下载。我们需要安装的是SDK Tools和Platform Tools  
+   下载链接在这里找到：http://www.androiddevtools.cn/  
    __注意事项:先安装SDK Tools，然后把Platform Tools解压到SDK Tools的安装目录下；完成之后把SDK安装目录下的tools和platform-tools都加入到PATH环境变量__
-3. 安装xcode，直接在App store里选择安装
-4. 安装appium的python绑定
+3. 安装xcode，直接在App store里选择安装  
+4. 安装appium的python绑定  
    `pip install Appium-Python-Client`
-5. 安装genymotion模拟器（Android）
+5. 安装genymotion模拟器（Android）  
    在这里注册下载：http://www.genymotion.net/
+
