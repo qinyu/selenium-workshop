@@ -96,3 +96,5 @@ class TestStringMethods(unittest.TestCase):
 5. 安装genymotion模拟器（Android）  
    在这里注册下载：http://www.genymotion.net/
 
+### Appium Windows设置
+![appium settings](doc/appium-settings-windows.png)
