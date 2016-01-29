@@ -1,6 +1,5 @@
+from nose.tools import nottest
 from selenium import webdriver
-
-yqin@thoughtworks.com
 
 def test_baidu_should_return_training_as_first_result_if_you_search_selenium():
 
@@ -21,3 +20,5 @@ def test_baidu_should_return_training_as_first_result_if_you_search_selenium():
     driver.save_screenshot("result.png")
 
     driver.quit()
+
+nottest(test_baidu_should_return_training_as_first_result_if_you_search_selenium)
