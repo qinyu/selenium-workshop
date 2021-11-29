@@ -1,20 +1,22 @@
 # Web自动化测试  
-Web自动化即是用编程语言编写测试脚本，通过selenium驱动Web浏览器来模拟用户行为，到达测试的目的。所以要编写自动化测试用例需要编程环境（语言+IDE），selenium， selenium相应要语言的API封装库和浏览器驱动。这里对应的就是python+pycharm，seleium的python绑定（自带了selenium），以及chrome浏览器的driver。编写脚本的方式也有很多，直接用脚本，使用xunit框架或者bdd框架
+Web自动化即是用编程语言编写测试脚本，通过selenium驱动Web浏览器来模拟用户行为，到达测试的目的。所以要编写自动化测试用例需要编程环境（语言+IDE），selenium， selenium相应要语言的API封装库和浏览器驱动。这里对应的就是python+pycharm，seleium的python绑定（自带了selenium），以及chrome浏览器的driver。编写脚本的方式也有很多，直接用脚本，使用xunit框架或者bdd框架都可以。
 
 ### 软件安装
-1. 安装python 3.5.1  
+1. 安装python 3.* 
    下载链接在这里找到：https://www.python.org/downloads/  
    __注意事项：安装时记得pip要一起安装，安装后需要配置环境变量，把安装目录和安装目录下的Scripts目录加到PATH__
-   安装完成zhi
 2. 安装python package，在命令行运行下面两条命令：  
    `pip install selenium`  
    `pip install nose`(可选, 让运行测试更简单)  
 3. 安装pycharm community edition（社区版）  
    下载链接在这里找到：https://www.jetbrains.com/pycharm/download/  
    __注意事项：选择右侧的Community，社区版免费使用，可以满足写测试用例99%的需要；pycharm本身是用java写的，如果事先没有安装java记得安装java__
-4. 安装chrome driver(使用chrome必须要安装)  
-   下载链接在这里找到：http://chromedriver.storage.googleapis.com/index.html  
+4. 安装chrome driver(使用chrome必须要安装) 或者 geckodriver（使用Firefox必须要安装） 
+   chromedriver下载链接在这里找到：http://chromedriver.storage.googleapis.com/index.html  
+   geckodriver下载连接在这里找到：https://github.com/mozilla/geckodriver/releases  
    __注意事项：解压到目录后，把目录加入到PATH环境变量__
+5. 执行测试:
+   `python -m nose test.py`
 
 ### 一个selenium例子
 ```python

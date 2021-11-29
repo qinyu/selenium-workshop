@@ -3,7 +3,7 @@ from selenium import webdriver
 
 def test_baidu_should_return_training_as_first_result_if_you_search_selenium():
 
-    driver = webdriver.Firefox()
+    driver = webdriver.Firefox() # webdriver.Chrome()
 
     driver.get("http://www.baidu.com")
 
@@ -20,5 +20,3 @@ def test_baidu_should_return_training_as_first_result_if_you_search_selenium():
     driver.save_screenshot("result.png")
 
     driver.quit()
-
-nottest(test_baidu_should_return_training_as_first_result_if_you_search_selenium)
